@@ -8,6 +8,7 @@ var plumber         = require('gulp-plumber'); //zapobiera przerywaniu taskow
 var concat          = require('gulp-concat'); //laczenie plikow js
 var uglify          = require('gulp-uglify'); //minimalizacja js
 var rename          = require('gulp-rename'); //zmiana nazwy wynikowych plikow
+var livereload      = require('gulp-refresh');
 
 
 var handleError = function(err) {
@@ -30,6 +31,7 @@ gulp.task('sass', function() {
             errorHandler: handleError
         }))
         .pipe(sourcemaps.init()) //inicjalizacja sourcemap przed zabawa na plikach
+        .pipe(livereload())
         .pipe(sass({
             outputStyle: 'expanded' //nested, expanded, compact, compressed
         }))
@@ -41,6 +43,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.write('.')) //po modyfikacjach na plikach zapisujemy w pamieci sourcemap
         .pipe(gulp.dest("css")) //i calosc zapisujemy w dest
         .pipe(browserSync.stream({match: '**/*.css'}));
+
 });
 
 
@@ -63,6 +66,7 @@ gulp.task('js', function() {
 
 
 gulp.task('watch', function() {
+    livereload.listen();
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch("*.html").on('change', browserSync.reload);

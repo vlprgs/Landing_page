@@ -84,7 +84,7 @@ nav p:nth-last-child(-n + 1) {
   width: 98px;
   height: 81px;
   background-image: url("../images/Vector Smart Object.png");
-  border-top: 12px solid lightgreen;
+  border-top: 12px solid darkgreen;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 98px;

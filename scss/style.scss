@@ -23,7 +23,7 @@
         color: white;
         font-size: 14px;
         font-family: Mada;
-        text-align: center;  
+        text-align: center;
         border-left: 1px solid white;
       }
       p:nth-last-child(-n + 1) {
@@ -79,14 +79,14 @@
       width: 98px;
       height: 81px;
       background-image: url("../images/Vector Smart Object.png");
-      border-top: 12px solid lightgreen;
+      border-top: 12px solid darkgreen;
       background-repeat: no-repeat;
       background-position: center;
       margin-right: 98px;
     }
     .cookies {
       margin-top: -100px;
-      width: 1366px;      
+      width: 1366px;
       height: 100px;
       position: fixed;
       background-color: rgba(44, 44, 44, 0.6);
@@ -129,7 +129,7 @@
       background-position-y: 23px;
       margin-right: 30px;
 }
-      
+
     .section_2nd {
       width: 1366px;
       height: 550px;
@@ -149,11 +149,9 @@
         font-family: Mada;
       }
     }
-    
+
     .doubles {
       font-size: 61px;
       font-family: Mada-light;
       float: left;
     }
-    
-  
