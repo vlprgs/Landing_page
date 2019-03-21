@@ -1,0 +1,41 @@
+    @mixin plates {
+    position: relative;
+    display: block;
+    height: 195px;
+    width: 216px;
+    transition: 1s;
+    color: white;
+    z-index: 0;
+      div {
+        position: absolute;
+        height: 195px;
+        width: 216px;
+        background-repeat: no-repeat;
+        background-position:top;
+          p {
+            display: none;
+            margin-left: 6%;
+            margin-right: 6%
+          }
+          }
+        &:hover {
+          z-index: 100;
+          background-color: lime;
+          padding-top: 4%;
+          height: 320px;
+          width: 216px;
+            p {
+              height: 200px;
+              font-size: 14px;
+              vertical-align: -25px;
+              line-height: 18px;
+              text-align:left;
+              padding-top: 70%;
+              margin-top: 1%;
+              padding-left: 6%;
+              padding-right: 6%;
+              color: white;
+              display:block;
+            }
+        }
+    }
