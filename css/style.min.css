@@ -1002,6 +1002,11 @@ nav p:nth-last-child(-n + 1) {
   line-height: 30px;
 }
 
+#form1 {
+  visibility: hidden;
+  transition: 2s;
+}
+
 .contact_form form {
   font-family: Homenaje;
   font-size: 32px;

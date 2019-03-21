@@ -441,6 +441,10 @@
          line-height: 30px;
        }
      }
+     #form1 {
+       visibility:hidden;
+       transition: 2s;
+     }
      .contact_form {
        form {
          font-family: Homenaje;
@@ -488,7 +492,6 @@
            z-index: 2;
          }
        }
-
      }
      .upperarrow{
         margin-left: 3%;

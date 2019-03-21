@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var cookie = document.getElementsByClassName("cookies")[0];
       btn.onclick = function(){
       cookie.style.visibility = "hidden";
-    }
+    };
+    var formbtn = document.getElementsByClassName("contact_btn")[0];
+    var formVisibility = document.getElementById("form1");
+    formbtn.onclick = function(){
+      formVisibility.style.visibility = "visible";
+      console.log("ok");
+    };
 
     // var gridPanels = [
     //   document.querySelector(".A1"),
