@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Landing Page</title>
   <link href="https://fonts.googleapis.com/css?family=Homenaje|Mada" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/style.min.css">
   <script src="./js/app.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -132,10 +134,10 @@
           <div class="contact_form">
           <p>Sed ut perspiciatis unde omnis iste error sit voluptatem accusantium doloremque laudantium, <b>totam rem aperiam</b>. eaque ipsa quae ab illo <b>inventore veritatis et</b> quasi architecto beatae vitae.</p>
           <form id="form1">
-            Hello! I'm <input type="text" name="firstname" value="Your Name" required>
-            and I represent <input type="text" name="comapnyname" value="Company name">
-            Call me at <input type="tel" name="telephonenumber" value="Your Telephone number" required>
-            or send an email to <input type="email" name="email" value="Your email adress" required>
+            Hello! I'm <input type="text" name="firstname" onfocus="this.value=''"value="Your Name" required>
+            and I represent <input type="text" name="comapnyname" onfocus="this.value=''" value="Company name">
+            Call me at <input type="tel" name="telephonenumber" onfocus="this.value=''" value="Your Telephone number" required>
+            or send an email to <input type="email" name="email"  onfocus="this.value=''"value="Your email adress" required>
             <input type="checkbox" required><div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
              <button class="submit_btn" type="submit"value="submit" form="form1"><div class="subtxt">send details</div><div class="submitarrow"></div></button>
           </form>

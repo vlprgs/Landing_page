@@ -1,8 +1,4 @@
 @import "./mixins.scss";
-@import "./1920x1080.scss";
-@import "./1280x1024.scss";
-@import "./1366x768.scss";
-@import "./1024x768.scss";
 
 
 @media screen and (max-width: 1366px){
@@ -35,10 +31,6 @@
         font-family: Mada;
         text-align: center;
         border-left: 1px solid white;
-        &:hover {
-          font-weight: bold;
-          transition: 0.5s;
-        }
       }
       p:nth-last-child(-n + 1) {
         border-right: 1px solid white;
