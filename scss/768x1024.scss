@@ -1,6 +1,6 @@
 @import "./mixins.scss";
 
-@media screen and (max-width: 1024px) and (min-width: 769px){
+@media screen and (max-width: 768px) and (min-width: 769px){
 
 
     * {
@@ -36,7 +36,7 @@
       }
     }
     .layer_1st{
-      width: 1024px;
+      width: 768px;
       height: 768px;
       background-image: url('../images/Rectangle1copy9.png');
       background-size: cover;
@@ -55,15 +55,15 @@
       background-size:cover;
       background-image: url("../images/chips-circuit-board-computer-4316.jpg");
       position: relative;
-      width: 1024px;
+      width: 768px;
       height: 768px;
     }
     .container_1st {
-      margin-left: 5%;
-      margin-right: 5%;
+      // margin-left: 208px;
+      // margin-right: 178px;
     }
     .section_1st {
-      width: 950px;
+      width: 768px;
       height: 768px;
       font-family: Homenaje;
       h1 {
@@ -83,17 +83,17 @@
     .logo{
       display: inline-block;
       float: left;
-      width: 98px;
+      width: 89px;
       height: 81px;
       background-image: url("../images/Vector Smart Object.png");
       border-top: 12px solid lime;
       background-repeat: no-repeat;
       background-position: center;
-      margin-right: 98px;
+      margin-right: 15px;
     }
     .cookies {
       margin-top: -100px;
-      width: 1024px;
+      width: 768px;
       height: 100px;
       position: fixed;
       visibility:visible;
@@ -112,9 +112,9 @@
       button {
         font-size: 14px;
         font-family: Mada;
-        margin-right: 5%;
+        margin-right: 208px;
         float: left;
-        margin-left: 5%;
+        margin-left: 58px;
         margin-top: 40px;
         height: 25px;
         width: 84px;
@@ -127,7 +127,7 @@
       }
     }
     .cookie_monster {
-      margin-left: 7%;
+      margin-left: 25px;
       width: 45px;
       height: 87px;
       background-repeat: no-repeat;
@@ -191,8 +191,8 @@
     .container_3rd {
       display: block;
       float: left;
-      margin-left: 5%;
-      margin-right: 5%;
+      margin-left: 208px;
+      margin-right: 178px;
       text-align: left;
       p {
         display: block;
@@ -457,7 +457,7 @@
          width: 700px;
          display: block;
          padding-top: 5%;
-         margin-left: 16%;
+         margin-left: 27%;
          // visibility: hidden;
          input {
            text-align: center;
